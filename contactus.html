@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-container{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .sign-up-button{
+            width: 25vw;
+            border-radius: 35px;
+            padding: 4px 0px 0px 0px;
+        }
+        .text{
+            color: white;
+            font-size: 20px;
+        }
+        #google{
+            background: linear-gradient(90deg,rgb(108, 34, 34),rgb(108, 34, 34));
+            border: none;
+            font-size: 19px;
+            color: black;
+            margin-top: 1.5vh;
+            margin-bottom: 6vh;
+        }
+        #google:hover{
+            box-shadow: 1px 1px 15px 0px rgb(255, 255, 255);
+        }
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .input-box{
+            width: 25vw;
+            height: 40px;
+            border-radius: 5px;
+            padding: 4px 10px;
+            margin-top: -10px;
+            margin-bottom: 30px;
+            font-size: large;
+        }
+        .submit{
+            width: 10vw;
+        height: 55px;
+        border-radius: 30px;
+        font-size: 18px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        }
+        .submit:hover{
+            box-shadow: 1px 1px 10px 0 rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Varshit</h2>
+        <button class="sign-up-button" id="google"><span style="font-size: 32px;color: rgb(255, 255, 255);margin: -25px;">G</span> <pre style="display: inline-block;">     </pre> Sign Up with Google</button>
+        <hr width="450px">
+        <form class="form">
+            <p class="text">What's your email</p>
+            <input class="input-box" type="text" name="email" id="email" placeholder="Enter your email" />
+            <div id="email-error"></div>
+            <p class="text">Name</p>
+            <input class="input-box" type="password" name="password" id="password" placeholder="Your Name as of Profile">
+            <div id="password-error"></div>
+            <p class="text">Type Your Query</p>
+            <input class="input-box" type="text" name="name" id="name" style="margin-bottom: -10px;" placeholder="Please type your Query" />
+            <p class="text" style=" font-size: small;margin-bottom: 30px;">Youn </p>
+            <div>
+                <input type="checkbox" name="update" class="text"> <pre style="display: inline-block;">  </pre> Keep me updated with messages from our Company</input>
+            </div>
+            <br>
+            <button class="submit" type="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
